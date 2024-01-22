@@ -11,6 +11,7 @@ st.set_page_config(
     initial_sidebar_state="collapsed",
 )
 
+
 # Create a connection object.
 conn = st.connection("gsheets", type=GSheetsConnection)
 
@@ -27,4 +28,10 @@ Hi there! This is a simple example how to embed an interactive table on a medium
 
 """
 
+# ---- SIDEBAR ----
+st.sidebar.header("Settings and Filters")
+
 st.write(pd.DataFrame(df))
+
+# ---- SIDEBAR ----
+st.sidebar.header("Settings and Filters")
