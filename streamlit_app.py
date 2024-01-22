@@ -4,17 +4,19 @@ import streamlit as st
 import pandas as pd
 from streamlit_gsheets import GSheetsConnection
 
-# Create a connection object.
-conn = st.connection("gsheets", type=GSheetsConnection)
-
-df = conn.read()
-
 st.set_page_config(
     page_title="Simple Google Sheets example",
     page_icon=":bar_chart:",
     # layout="wide",
     initial_sidebar_state="collapsed",
 )
+
+# Create a connection object.
+conn = st.connection("gsheets", type=GSheetsConnection)
+
+df = conn.read()
+
+
 
 st.title("Simple Google Sheets example using Streamlit")
 
