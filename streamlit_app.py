@@ -18,8 +18,7 @@ st.title("Simple Google Sheets example using Streamlit")
 """
 Hi there! This is a simple example how to embed an interactive table on a medium blog!
 """
-
-
+st.write(pd.DataFrame(df))
 """
 Just some footer notes.
 """
