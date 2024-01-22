@@ -1,3 +1,5 @@
+# streamlit_app.py
+
 import streamlit as st
 import pandas as pd
 from streamlit_gsheets import GSheetsConnection
@@ -16,11 +18,11 @@ df = conn.read()
 st.title("Simple Google Sheets example using Streamlit")
 
 """
-Hi there! This is a simple example how to embed an interactive table on a medium blog!
+Hi there! This is a simple example how to embed an interactive table on a Medium blog!
 """
 st.write(pd.DataFrame(df))
 """
-Just some footer notes.
+You can read the blog here:
 """
 
 
