@@ -1,7 +1,7 @@
 # streamlit_app.py
 
 import streamlit as st
-import panda
+import pandas as pd
 from streamlit_gsheets import GSheetsConnection
 
 # Create a connection object.
