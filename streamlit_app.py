@@ -9,12 +9,6 @@ conn = st.connection("gsheets", type=GSheetsConnection)
 
 df = conn.read()
 
-st.set_page_config(
-    page_title="European Magic Formula",
-    page_icon=":euro:",
-    # layout="wide",
-    initial_sidebar_state="collapsed",
-)
 
 st.title("European Magic Formula")
 
