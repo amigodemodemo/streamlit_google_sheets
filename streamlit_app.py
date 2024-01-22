@@ -9,12 +9,18 @@ conn = st.connection("gsheets", type=GSheetsConnection)
 
 df = conn.read()
 
+st.set_page_config(
+    page_title="Simple Google Sheets example",
+    page_icon=":bar_chart:",
+    # layout="wide",
+    initial_sidebar_state="collapsed",
+)
 
-st.title("European Magic Formula")
+st.title("Simple Google Sheets example using Streamlit")
 
 """
 
-Hi there! These are the best stocks on Euronext, Deutsche Börse and London Stock Exchange according to Joel Greenblatt's Magic Formula from 'The Little Book That Beats the Market' :blue_book:. 
+Hi there! This is a simple example how to embed an interactive table on a medium blog!
 
 
 """
