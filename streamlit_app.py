@@ -10,7 +10,6 @@ dataframe = conn.read()
 # Introduction text
 """
 Hi there! This is a simple Google Sheets example on how to embed a dynamic table on a Medium blog with Streamlit! 
-The data shown is the historic stock price of Google. However with the google finance formula you could display the current stock within the Streamlit app.
 """
 
 # Define tabs
@@ -24,5 +23,8 @@ with tab2:
 
 # Footer text
 """
-In the "Graph" tab I have put an example of a simple graph that can be embedded. You can read my blog here:
+The data shown above is the historic stock price of Google. In the "Graph" tab I have put an example of a simple graph that can be embedded. 
+"""
+"""
+You can read my blog here:
 """
