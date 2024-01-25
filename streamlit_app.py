@@ -9,7 +9,7 @@ dataframe = conn.read()
 
 # Streamlit content
 """
-Hi there! This is a simple Google Sheets example how to embed an interactive table on a Medium blog with Streamlit!
+Hi there! This is a simple Google Sheets example how to embed an interactive table on a Medium blog with Streamlit! The data is the historic stock price of Google
 """
 st.write(pd.DataFrame(dataframe))
 """
