@@ -9,7 +9,7 @@ dataframe = conn.read()
 
 # Introduction text
 """
-Hi there! This is a simple Google Sheets example how to embed an dynamic table on a Medium blog with Streamlit! The data is the historic stock price of Google.
+Hi there! This is a simple Google Sheets example on how to embed a dynamic table on a Medium blog with Streamlit! The data shown is the historic stock price of Google.
 """
 
 # Define tabs
