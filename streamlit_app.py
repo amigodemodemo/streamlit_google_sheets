@@ -9,7 +9,7 @@ dataframe = conn.read()
 
 # Introduction text
 """
-Hi there! This is a simple Google Sheets example how to embed an interactive table and graph on a Medium blog with Streamlit! The data is the historic stock price of Google.
+Hi there! This is a simple Google Sheets example how to embed an dynamic table on a Medium blog with Streamlit! The data is the historic stock price of Google.
 """
 
 # Define tabs
@@ -21,6 +21,7 @@ with tab1:
 with tab2:
   st.line_chart(pd.DataFrame(dataframe),x="Date", y="Close")
 
+# Footer text
 """
-You can read the blog here:
+In the "Graph" tab I have put an example of a simple graph that can be embedded. You can read my blog here:
 """
