@@ -22,7 +22,8 @@ with tab2:
   Let's throw in a graph as well, just for good measure:
   """
   st.line_chart(pd.DataFrame(dataframe),x="Date", y="Close")
-  """
+
+"""
 You can read the blog here:
 """
 
