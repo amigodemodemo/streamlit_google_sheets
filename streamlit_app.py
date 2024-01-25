@@ -11,18 +11,13 @@ dataframe = conn.read()
 tab1, tab2 = st.tabs(["Table", "Graph"])
 
 # Streamlit content
+"""
+Hi there! This is a simple Google Sheets example how to embed an interactive table on a Medium blog with Streamlit! The data is the historic stock price of Google
+"""
 with tab1:
-  """
-  Hi there! This is a simple Google Sheets example how to embed an interactive table on a Medium blog with Streamlit! The data is the historic stock price of Google
-  """
   st.write(pd.DataFrame(dataframe))
-  """
-  
 with tab2:
-  Let's throw in a graph as well, just for good measure:
-  """
   st.line_chart(pd.DataFrame(dataframe),x="Date", y="Close")
-
 """
 You can read the blog here:
 """
