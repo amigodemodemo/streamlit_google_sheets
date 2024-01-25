@@ -12,7 +12,7 @@ dataframe = conn.read()
 Hi there! This is a simple Google Sheets example how to embed an interactive table on a Medium blog with Streamlit!
 """
 st.write(pd.DataFrame(dataframe))
-st.linechart((pd.DataFrame(dataframe))
+st.linechart(pd.DataFrame(dataframe))
 """
 You can read the blog here:
 """
