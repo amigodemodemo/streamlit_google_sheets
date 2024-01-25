@@ -1,26 +1,17 @@
-# streamlit_app.py
-
+# Import dependencies
 import streamlit as st
 import pandas as pd
 from streamlit_gsheets import GSheetsConnection
 
-st.set_page_config(
-    page_title="Simple Google Sheets example",
-    page_icon=":bar_chart:",
-    # layout="wide",
-    initial_sidebar_state="collapsed",
-)
-
-# Create a connection object.
+# Create a connection object
 conn = st.connection("gsheets", type=GSheetsConnection)
-df = conn.read()
+dataframe = conn.read()
 
-st.title("Simple Google Sheets example using Streamlit")
-
+# Streamlit content
 """
-Hi there! This is a simple example how to embed an interactive table on a Medium blog!
+Hi there! This is a simple Google Sheets example how to embed an interactive table on a Medium blog with Streamlit!
 """
-st.write(pd.DataFrame(df))
+st.write(pd.DataFrame(dataframe))
 """
 You can read the blog here:
 """
