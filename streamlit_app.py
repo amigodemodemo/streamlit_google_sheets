@@ -26,5 +26,5 @@ with tab2:
 The data shown above is the historic stock price of Google. In the "Graph" tab I have put an example of a simple graph that can be embedded. 
 """
 """
-You can read my blog here:
+You can read my blog here: https://medium.com/@steffenjanbrouwer/how-to-embed-data-tables-and-graphs-in-your-medium-blogs-16d93d99ebc7
 """
