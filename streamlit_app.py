@@ -5,7 +5,8 @@ from streamlit_gsheets import GSheetsConnection
 
 # Create a connection object
 conn = st.connection("gsheets", type=GSheetsConnection)
-dataframe = conn.read()
+google_sheets_table = conn.read()
+dataframe = pd.DataFrame(google_sheets_table) # Convert google sheets table into python dataframe. Streamlit expects dataframes as input.
 
 # Introduction text
 """
@@ -17,9 +18,9 @@ tab1, tab2 = st.tabs(["Table", "Graph"])
 
 # Streamlit content
 with tab1:
-  st.write(pd.DataFrame(dataframe))
+  st.write(dataframe)
 with tab2:
-  st.line_chart(pd.DataFrame(dataframe),x="Date", y="Close")
+  st.line_chart(dataframe,x="Date", y="Close")
 
 # Footer text
 """
