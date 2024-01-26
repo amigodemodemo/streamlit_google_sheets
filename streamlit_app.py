@@ -18,7 +18,7 @@ tab1, tab2 = st.tabs(["Table", "Graph"])
 
 # Streamlit content
 with tab1:
-  st.write(dataframe, hide_index=True)
+  st.write(dataframe)
 with tab2:
   st.line_chart(dataframe,x="Date", y="Close")
 
